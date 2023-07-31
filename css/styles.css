@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #191919;
+    color: #FFFFFF;
+}
+
+/* Navbar Section */
+.navbar-heading{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    background-color: #1A1A1A;
+}
+
+.left h2{
+    font-size: 1.8em;
+    color: #FFFF00;
+}
+
+.right ul{
+    display: flex;
+}
+
+.right ul li{
+    list-style: none;
+    margin: 0 25px;
+}
+
+.right ul li a{
+    color: #FFFFFF;;
+    text-decoration: none;
+}
+
+.right ul li a:hover{
+    color: #5DADE2;
+    font-size: 20px;
+}
+
+/* Home Section */
+.home-container{
+    width: 100%;
+    margin: 60px auto;
+    padding-top: 50px;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.home-container .left-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.home-container .left-section .top h2{
+    font-size: 1.5em;
+}
+
+.home-container .left-section .top h1{
+    font-size: 3.3em;
+    color: #FFFF00;
+}
+
+.home-container .left-section .top p{
+    margin-top: 10px;
+}
+
+.home-container .left-section .top #element{
+    font-size: 1.2em;
+    color: #FFFF00;
+}
+
+.home-container .left-section .bottom{
+    display: flex;
+    gap: 30px;
+}
+
+.home-container .left-section .bottom a{
+    color: white;
+    text-decoration: none;
+}
+
+.home-container .right-section img{
+    height: 300px;
+    width: 250px;
+    border: 4px solid #ccc;
+}
+
+.home-container .right-section img:hover{
+    transform: scale(1.2);
+}
+
+/* About section */
+.about-container{
+    width: 80%;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 70px;
+}
+
+.about-container .image{
+    height: 190px;
+}
+
+.about-container .image img{
+    height: 400px;
+    width: 400px;
+    border: 4px solid #ccc;
+    margin-right: 70px;
+}
+
+.about-container .image img:hover{
+    transform: scale(1.2);
+}
+
+.about-container .about-content{
+    width: 80%;
+    font-size: 1.2em;
+}
+
+.about-container .about-content h2{
+    font-size: 1.8em;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+/* Project Section */
+.project-container{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px auto;
+}
+
+.project-container .top-header{
+    font-size: 1.2em;   
+}
+
+.project-container .my-projects{
+    margin: 50px;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.left-project, .right-project{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 450px;
+    width: 100%;
+    margin: 20px;
+}
+
+.right-project{
+    flex-direction: row-reverse;
+}
+
+.left-project img{
+    height: 400px;
+    width: 600px;
+}
+
+.right-project img{
+    height: 400px;
+    width: 600px;
+}
+
+.content{
+    padding: 40px;
+    width: 450px;
+}
+
+.content h3{
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 7px;
+}
+
+.myproject-link{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin-top: 60px;
+}
+
+.myproject-btn{
+    height: 40px;
+    text-transform: capitalize;
+    font-size: 18px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.myproject-btn:hover{
+    transform: scale(1.1);
+}
+
+.myproject-btn a{
+    text-decoration: none;
+    color: white;
+}
+
+.myproject-btn.live{
+    background: none;
+    border: 2px solid #fff;
+}
+
+.technologies{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2px;
+    margin: 15px;
+}
+
+.technologies svg{
+    height: 40px;
+    width: 40px;
+}
+
+.project-links a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+/* Resume Section */
+.resume-container{
+    width: 100%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.my-skills h1{
+    font-size: 2.2em;
+    text-align: center;
+}
+
+.skills-content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 50px;
+    margin: 30px 0;
+}
+
+.bars{
+    width: 700px;
+}
+
+.bars .info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.bars .info .lng{
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.percent{
+    color: #FFFF00;
+    display: flex;
+}
+
+.percent .line{
+    height: 5px;
+    width: 100%;
+    background-color: #C0C0C0;
+    margin-top: 8px;
+    margin-left: 8px;
+    position: relative;
+}
+
+.percent .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    background: #FFFF00;
+}
+
+.percent .html::before{
+    width: 90%;
+}
+
+.percent .js::before{
+    width: 70%;
+}
+
+.percent .django::before{
+    width: 75%;
+}
+
+.percent .nodejs::before{
+    width: 60%;
+}
+
+.percent .expressjs::before{
+    width: 60%;
+}
+
+.percent .cpp::before{
+    width: 70%;
+}
+
+.my-education, .my-experiences{
+    margin-top: 70px;   
+    display: flex;
+    flex-direction: column;
+}
+
+.my-education h2{
+    font-size: 2.2em;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.education-content{
+    display: flex;
+    gap: 70px;
+    margin-bottom: 35px;
+}
+
+.education-content #institute-year{
+    color: #FFFF00;
+    font-weight: lighter;
+}
+
+.education-content .education h3{
+    font-size: 1.9em;
+    font-weight: 700;
+    color: #FFFF00;
+    padding-bottom: 10px;
+}
+
+.education-content .education #institute-name{
+    font-size: 1.3em;
+}
+
+.my-experiences h2{
+    font-size: 2.2em;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.experience-content{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin: auto;
+    margin-bottom: 35px;
+    width: 39%;   
+}
+
+.experience-content #organization-workdays{
+    color: #FFFF00;
+    font-weight: lighter;
+}
+
+.experience{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.experience-content .experience h3{
+    font-size: 1.9em;
+    font-weight: 700;
+    color: #FFFF00;       
+}
+
+.experience-content .experience h4{
+    font-size: 1.4em;
+    font-weight: 200;       
+}
+
+/* Contact Section */
+.contact-container{
+    width: 70%;
+    margin: 40px auto;
+}
+
+.contact-container .contact-form{
+    width: 45%;
+    height: 500px;
+    border: 2px solid #1C1C1C;
+    border-radius: 8px;
+    background-color: #303030;
+    margin: 20px auto;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.contact-container .contact-form h2{
+    font-size: 2.4em;
+    color: #FFFFFF;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.contact-container .contact-form .contact-details{
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contact-container .contact-form .contact-details input, 
+.contact-container .contact-form .contact-details textarea{
+    width: 100%;
+    height: 30px;
+    font-size: 25px;
+    padding-left: 10px;
+    border-radius: 6px;
+    border: 1px solid black;
+    background-color: #FFFFF4;
+    color: #FFFFFF;
+}
+
+.contact-container .contact-form .contact-details textarea{
+    height: 150px;
+}
+
+.contact-container .contact-form .contact-details button[type="submit"]{
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: #4CAF50;
+    color: #FFF;
+    margin: 5px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 8px;
+}
+
+.contact-container .contact-form .contact-details button[type="submit"]:hover{
+    background: #43A047;
+}    
